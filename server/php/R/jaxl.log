@@ -1,0 +1,417 @@
+jaxl:180 - 2016-05-18 06:24:21 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-18 06:24:22 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-18 06:24:22 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'connected'
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-18 06:24:22 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-18 06:24:22 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:24:22 - read 571/571 of data
+jaxl_socket_client:189 - 2016-05-18 06:24:22 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='3931606531' from='phabricator.ahsan.in' version='1.0' xml:lang='en'><stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'wait_for_stream_features'
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-18 06:24:22 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-18 06:24:22 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:24:22 - read 220/791 of data
+jaxl_socket_client:189 - 2016-05-18 06:24:22 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-18 06:24:22 - sent 226/531 of data
+jaxl_socket_client:202 - 2016-05-18 06:24:22 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>kannan1</username><password>$2y$12$BgbYPU1YwfJRNy5DcxuKUekqWjlXGpVXWi4wks0RoS2NgWtRX0LU2</password></query></iq>
+jaxl_loop:104 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:24:22 - read 54/845 of data
+jaxl_socket_client:189 - 2016-05-18 06:24:22 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-18 06:24:22 - sent 16/547 of data
+jaxl_socket_client:202 - 2016-05-18 06:24:22 - </stream:stream>
+jaxl_loop:104 - 2016-05-18 06:24:22 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:24:22 - read 16/861 of data
+jaxl_socket_client:189 - 2016-05-18 06:24:22 - </stream:stream>
+jaxl_fsm:61 - 2016-05-18 06:24:22 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-18 06:24:22 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-18 06:24:22 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-18 06:24:22 - no more active fd's to select
+r:1804 - 2016-05-18 06:24:22 - registration succeeded
+jaxl:180 - 2016-05-18 06:25:50 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-18 06:25:50 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-18 06:25:50 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'connected'
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-18 06:25:50 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-18 06:25:50 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:25:50 - read 178/178 of data
+jaxl_socket_client:189 - 2016-05-18 06:25:50 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='1430688465' from='phabricator.ahsan.in' version='1.0' xml:lang='en'>
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'wait_for_stream_features'
+jaxl_socket_client:188 - 2016-05-18 06:25:50 - read 393/571 of data
+jaxl_socket_client:189 - 2016-05-18 06:25:50 - <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-18 06:25:50 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-18 06:25:50 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:25:50 - read 220/791 of data
+jaxl_socket_client:189 - 2016-05-18 06:25:50 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-18 06:25:50 - sent 226/531 of data
+jaxl_socket_client:202 - 2016-05-18 06:25:50 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>kannan2</username><password>$2y$12$izra2F9Gi1akvNIZFwsXceL01l9bz/YITa.AprLGgPV7SESV8diSG</password></query></iq>
+jaxl_loop:104 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:25:50 - read 422/1213 of data
+jaxl_socket_client:189 - 2016-05-18 06:25:50 - <iq from='phabricator.ahsan.in' id='2' type='error'><query xmlns='jabber:iq:register'><username>kannan2</username><password>$2y$12$izra2F9Gi1akvNIZFwsXceL01l9bz/YITa.AprLGgPV7SESV8diSG</password></query><error code='500' type='wait'><resource-constraint xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/><text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'>Users are not allowed to register accounts so quickly</text></error></iq>
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-18 06:25:50 - sent 16/547 of data
+jaxl_socket_client:202 - 2016-05-18 06:25:50 - </stream:stream>
+jaxl_loop:104 - 2016-05-18 06:25:50 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:25:50 - read 16/1229 of data
+jaxl_socket_client:189 - 2016-05-18 06:25:50 - </stream:stream>
+jaxl_fsm:61 - 2016-05-18 06:25:50 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-18 06:25:50 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-18 06:25:50 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-18 06:25:50 - no more active fd's to select
+r:1804 - 2016-05-18 06:25:50 - registration failed
+jaxl:180 - 2016-05-18 06:35:30 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-18 06:35:30 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-18 06:35:30 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-18 06:35:30 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-18 06:35:30 - current state 'connected'
+jaxl_fsm:61 - 2016-05-18 06:35:30 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:35:30 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-18 06:35:30 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-18 06:35:30 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:35:30 - read 177/177 of data
+jaxl_socket_client:189 - 2016-05-18 06:35:30 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='425093085' from='phabricator.ahsan.in' version='1.0' xml:lang='en'>
+jaxl_fsm:61 - 2016-05-18 06:35:30 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-18 06:35:30 - current state 'wait_for_stream_features'
+jaxl_socket_client:188 - 2016-05-18 06:35:30 - read 393/570 of data
+jaxl_socket_client:189 - 2016-05-18 06:35:30 - <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-18 06:35:30 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:35:30 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-18 06:35:30 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-18 06:35:30 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:35:30 - read 220/790 of data
+jaxl_socket_client:189 - 2016-05-18 06:35:30 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-18 06:35:30 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:35:30 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-18 06:35:30 - sent 226/531 of data
+jaxl_socket_client:202 - 2016-05-18 06:35:30 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>kannan3</username><password>$2y$12$K9qScmU9JiV/DtzCNPqIwOp78ZxPJgHXiWQsVtmA9uHtJZbmr7P3a</password></query></iq>
+jaxl_loop:104 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:35:30 - read 54/844 of data
+jaxl_socket_client:189 - 2016-05-18 06:35:30 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-05-18 06:35:30 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 06:35:30 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-18 06:35:30 - sent 16/547 of data
+jaxl_socket_client:202 - 2016-05-18 06:35:30 - </stream:stream>
+jaxl_loop:104 - 2016-05-18 06:35:30 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 06:35:31 - read 16/860 of data
+jaxl_socket_client:189 - 2016-05-18 06:35:31 - </stream:stream>
+jaxl_fsm:61 - 2016-05-18 06:35:31 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-18 06:35:31 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-18 06:35:31 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-18 06:35:31 - no more active fd's to select
+r:1804 - 2016-05-18 06:35:31 - registration succeeded
+jaxl:180 - 2016-05-18 07:03:40 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-18 07:03:40 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-18 07:03:40 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-18 07:03:40 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-18 07:03:40 - current state 'connected'
+jaxl_fsm:61 - 2016-05-18 07:03:40 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:03:40 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-18 07:03:40 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-18 07:03:40 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:03:40 - read 178/178 of data
+jaxl_socket_client:189 - 2016-05-18 07:03:40 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='2819089394' from='phabricator.ahsan.in' version='1.0' xml:lang='en'>
+jaxl_fsm:61 - 2016-05-18 07:03:40 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-18 07:03:40 - current state 'wait_for_stream_features'
+jaxl_socket_client:188 - 2016-05-18 07:03:40 - read 393/571 of data
+jaxl_socket_client:189 - 2016-05-18 07:03:40 - <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-18 07:03:40 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:03:40 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-18 07:03:40 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-18 07:03:40 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:03:40 - read 220/791 of data
+jaxl_socket_client:189 - 2016-05-18 07:03:40 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-18 07:03:40 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:03:40 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-18 07:03:40 - sent 226/531 of data
+jaxl_socket_client:202 - 2016-05-18 07:03:40 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>kannan8</username><password>$2y$12$8qa8CggvKzeTkjH.MYI1Uuh519xqcyM5x5V7eZMkCC2KgFqf0QF6a</password></query></iq>
+jaxl_loop:104 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:03:40 - read 54/845 of data
+jaxl_socket_client:189 - 2016-05-18 07:03:40 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-05-18 07:03:40 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:03:40 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-18 07:03:40 - sent 16/547 of data
+jaxl_socket_client:202 - 2016-05-18 07:03:40 - </stream:stream>
+jaxl_loop:104 - 2016-05-18 07:03:40 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:03:41 - read 16/861 of data
+jaxl_socket_client:189 - 2016-05-18 07:03:41 - </stream:stream>
+jaxl_fsm:61 - 2016-05-18 07:03:41 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-18 07:03:41 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-18 07:03:41 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-18 07:03:41 - no more active fd's to select
+r:1808 - 2016-05-18 07:03:41 - registration succeeded
+jaxl:180 - 2016-05-18 07:07:18 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-18 07:07:18 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-18 07:07:18 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-18 07:07:18 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-18 07:07:18 - current state 'connected'
+jaxl_fsm:61 - 2016-05-18 07:07:18 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:07:18 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-18 07:07:18 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-18 07:07:18 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:07:18 - read 177/177 of data
+jaxl_socket_client:189 - 2016-05-18 07:07:18 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='941289332' from='phabricator.ahsan.in' version='1.0' xml:lang='en'>
+jaxl_fsm:61 - 2016-05-18 07:07:18 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-18 07:07:18 - current state 'wait_for_stream_features'
+jaxl_socket_client:188 - 2016-05-18 07:07:18 - read 393/570 of data
+jaxl_socket_client:189 - 2016-05-18 07:07:18 - <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-18 07:07:18 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:07:18 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-18 07:07:18 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-18 07:07:18 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:07:18 - read 220/790 of data
+jaxl_socket_client:189 - 2016-05-18 07:07:18 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-18 07:07:18 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:07:18 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-18 07:07:18 - sent 226/531 of data
+jaxl_socket_client:202 - 2016-05-18 07:07:18 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>kannan9</username><password>$2y$12$CuGsJICaQy9YxLGgWx.4C.eCD9NXwgc/Ur8wdVzIvVFp2cjm7McZW</password></query></iq>
+jaxl_loop:104 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:07:18 - read 422/1212 of data
+jaxl_socket_client:189 - 2016-05-18 07:07:18 - <iq from='phabricator.ahsan.in' id='2' type='error'><query xmlns='jabber:iq:register'><username>kannan9</username><password>$2y$12$CuGsJICaQy9YxLGgWx.4C.eCD9NXwgc/Ur8wdVzIvVFp2cjm7McZW</password></query><error code='500' type='wait'><resource-constraint xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/><text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'>Users are not allowed to register accounts so quickly</text></error></iq>
+jaxl_fsm:61 - 2016-05-18 07:07:18 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-18 07:07:18 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-18 07:07:18 - sent 16/547 of data
+jaxl_socket_client:202 - 2016-05-18 07:07:18 - </stream:stream>
+jaxl_loop:104 - 2016-05-18 07:07:18 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-18 07:07:19 - read 16/1228 of data
+jaxl_socket_client:189 - 2016-05-18 07:07:19 - </stream:stream>
+jaxl_fsm:61 - 2016-05-18 07:07:19 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-18 07:07:19 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-18 07:07:19 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-18 07:07:19 - no more active fd's to select
+r:1808 - 2016-05-18 07:07:19 - registration failed
+jaxl:180 - 2016-05-30 14:00:14 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-30 14:00:14 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-30 14:00:14 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'connected'
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-30 14:00:14 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-30 14:00:14 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-30 14:00:14 - read 571/571 of data
+jaxl_socket_client:189 - 2016-05-30 14:00:14 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='3048811875' from='phabricator.ahsan.in' version='1.0' xml:lang='en'><stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'wait_for_stream_features'
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-30 14:00:14 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-30 14:00:14 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-30 14:00:14 - read 220/791 of data
+jaxl_socket_client:189 - 2016-05-30 14:00:14 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-30 14:00:14 - sent 226/531 of data
+jaxl_socket_client:202 - 2016-05-30 14:00:14 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>mkannan</username><password>$2y$12$4bvtsmkg4p0ny3VgYySVV.43kmdJ3IhneRUh7rCyfUCmmXsHQpzi6</password></query></iq>
+jaxl_loop:104 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-30 14:00:14 - read 54/845 of data
+jaxl_socket_client:189 - 2016-05-30 14:00:14 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-30 14:00:14 - sent 16/547 of data
+jaxl_socket_client:202 - 2016-05-30 14:00:14 - </stream:stream>
+jaxl_loop:104 - 2016-05-30 14:00:14 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-30 14:00:14 - read 16/861 of data
+jaxl_socket_client:189 - 2016-05-30 14:00:14 - </stream:stream>
+jaxl_fsm:61 - 2016-05-30 14:00:14 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-30 14:00:14 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-30 14:00:14 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-30 14:00:14 - no more active fd's to select
+r:1814 - 2016-05-30 14:00:14 - registration succeeded
+jaxl:180 - 2016-05-31 07:09:17 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-05-31 07:09:17 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-05-31 07:09:17 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-05-31 07:09:17 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-05-31 07:09:17 - current state 'connected'
+jaxl_fsm:61 - 2016-05-31 07:09:17 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-31 07:09:17 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-05-31 07:09:17 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-05-31 07:09:17 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-31 07:09:17 - read 571/571 of data
+jaxl_socket_client:189 - 2016-05-31 07:09:17 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='1816799424' from='phabricator.ahsan.in' version='1.0' xml:lang='en'><stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-05-31 07:09:17 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-05-31 07:09:17 - current state 'wait_for_stream_features'
+jaxl_fsm:61 - 2016-05-31 07:09:17 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-31 07:09:17 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-05-31 07:09:17 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-05-31 07:09:17 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-31 07:09:17 - read 220/791 of data
+jaxl_socket_client:189 - 2016-05-31 07:09:17 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-05-31 07:09:17 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-31 07:09:17 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-05-31 07:09:17 - sent 229/534 of data
+jaxl_socket_client:202 - 2016-05-31 07:09:17 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>marikannan</username><password>$2y$12$yBZx2pXRDoJl7uVNVaClPeCk9l.s1J1ouDz07gDHlSGfqylqg3lGO</password></query></iq>
+jaxl_loop:104 - 2016-05-31 07:09:17 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-31 07:09:18 - read 54/845 of data
+jaxl_socket_client:189 - 2016-05-31 07:09:18 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-05-31 07:09:18 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-05-31 07:09:18 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-05-31 07:09:18 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-05-31 07:09:18 - sent 16/550 of data
+jaxl_socket_client:202 - 2016-05-31 07:09:18 - </stream:stream>
+jaxl_loop:104 - 2016-05-31 07:09:18 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-05-31 07:09:18 - read 16/861 of data
+jaxl_socket_client:189 - 2016-05-31 07:09:18 - </stream:stream>
+jaxl_fsm:61 - 2016-05-31 07:09:18 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-05-31 07:09:18 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-05-31 07:09:18 - current state 'disconnected'
+jaxl_loop:115 - 2016-05-31 07:09:18 - no more active fd's to select
+r:1820 - 2016-05-31 07:09:18 - registration succeeded
+jaxl:180 - 2016-06-15 13:41:33 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-06-15 13:41:33 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-06-15 13:41:33 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'connected'
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-06-15 13:41:33 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-06-15 13:41:33 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:41:33 - read 178/178 of data
+jaxl_socket_client:189 - 2016-06-15 13:41:33 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='2517375033' from='phabricator.ahsan.in' version='1.0' xml:lang='en'>
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'wait_for_stream_features'
+jaxl_socket_client:188 - 2016-06-15 13:41:33 - read 393/571 of data
+jaxl_socket_client:189 - 2016-06-15 13:41:33 - <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-06-15 13:41:33 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-06-15 13:41:33 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:41:33 - read 220/791 of data
+jaxl_socket_client:189 - 2016-06-15 13:41:33 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-06-15 13:41:33 - sent 228/533 of data
+jaxl_socket_client:202 - 2016-06-15 13:41:33 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>chatuser3</username><password>$2y$12$HWKBKdse9akpqUCXvY.bSeg00VLKkaaAlTDiU2mJuNqSYuP7gK4Xe</password></query></iq>
+jaxl_loop:104 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:41:33 - read 54/845 of data
+jaxl_socket_client:189 - 2016-06-15 13:41:33 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-06-15 13:41:33 - sent 16/549 of data
+jaxl_socket_client:202 - 2016-06-15 13:41:33 - </stream:stream>
+jaxl_loop:104 - 2016-06-15 13:41:33 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:41:33 - read 16/861 of data
+jaxl_socket_client:189 - 2016-06-15 13:41:33 - </stream:stream>
+jaxl_fsm:61 - 2016-06-15 13:41:33 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-06-15 13:41:33 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-06-15 13:41:33 - current state 'disconnected'
+jaxl_loop:115 - 2016-06-15 13:41:33 - no more active fd's to select
+r:1814 - 2016-06-15 13:41:33 - registration succeeded
+jaxl:180 - 2016-06-15 13:43:20 - dns srv lookup for phabricator.ahsan.in
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'setup' for incoming event 'connect'
+jaxl_socket_client:95 - 2016-06-15 13:43:20 - trying tcp://phabricator.ahsan.in:5222
+jaxl_socket_client:104 - 2016-06-15 13:43:20 - connected to tcp://phabricator.ahsan.in:5222
+jaxl_loop:82 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 0
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'connected'
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'connected' for incoming event 'start_stream'
+jaxl_loop:82 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'wait_for_stream_start'
+jaxl_socket_client:201 - 2016-06-15 13:43:20 - sent 188/188 of data
+jaxl_socket_client:202 - 2016-06-15 13:43:20 - <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" to="phabricator.ahsan.in" xmlns="jabber:client" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+jaxl_loop:104 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:43:20 - read 178/178 of data
+jaxl_socket_client:189 - 2016-06-15 13:43:20 - <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='3847490147' from='phabricator.ahsan.in' version='1.0' xml:lang='en'>
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'wait_for_stream_start' for incoming event 'start_cb'
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'wait_for_stream_features'
+jaxl_socket_client:188 - 2016-06-15 13:43:20 - read 393/571 of data
+jaxl_socket_client:189 - 2016-06-15 13:43:20 - <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='Kyn00yB1iXiJLUJ0gVvn7tZREMg='/><register xmlns='http://jabber.org/features/iq-register'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms></stream:features>
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'wait_for_stream_features' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'wait_for_register_form'
+jaxl_socket_client:201 - 2016-06-15 13:43:20 - sent 117/305 of data
+jaxl_socket_client:202 - 2016-06-15 13:43:20 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="get" id="1"><query xmlns="jabber:iq:register"></query></iq>
+jaxl_loop:104 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:43:20 - read 220/791 of data
+jaxl_socket_client:189 - 2016-06-15 13:43:20 - <iq from='phabricator.ahsan.in' id='1' type='result'><query xmlns='jabber:iq:register'><instructions>Choose a username and password to register with this server</instructions><username></username><password/></query></iq>
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'wait_for_register_form' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'wait_for_register_response'
+jaxl_socket_client:201 - 2016-06-15 13:43:20 - sent 228/533 of data
+jaxl_socket_client:202 - 2016-06-15 13:43:20 - <iq xmlns="jabber:client" to="phabricator.ahsan.in" type="set" id="2"><query xmlns="jabber:iq:register"><username>chatuser4</username><password>$2y$12$t0rGOHs6O4rDYiE3fXLN7u3ARi7byWO0Vcz7TdS1KN31.LjrQJR52</password></query></iq>
+jaxl_loop:104 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:43:20 - read 54/845 of data
+jaxl_socket_client:189 - 2016-06-15 13:43:20 - <iq from='phabricator.ahsan.in' id='2' type='result'/>
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'wait_for_register_response' for incoming event 'stanza_cb'
+jaxl_loop:82 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 1
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'logged_out'
+jaxl_socket_client:201 - 2016-06-15 13:43:20 - sent 16/549 of data
+jaxl_socket_client:202 - 2016-06-15 13:43:20 - </stream:stream>
+jaxl_loop:104 - 2016-06-15 13:43:20 - active read fds: 1, write fds: 0
+jaxl_socket_client:188 - 2016-06-15 13:43:20 - read 16/861 of data
+jaxl_socket_client:189 - 2016-06-15 13:43:20 - </stream:stream>
+jaxl_fsm:61 - 2016-06-15 13:43:20 - calling state handler 'logged_out' for incoming event 'end_cb'
+jaxl_loop:104 - 2016-06-15 13:43:20 - active read fds: 0, write fds: 0
+jaxl_fsm:71 - 2016-06-15 13:43:20 - current state 'disconnected'
+jaxl_loop:115 - 2016-06-15 13:43:20 - no more active fd's to select
+r:1814 - 2016-06-15 13:43:20 - registration succeeded
